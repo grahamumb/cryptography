@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vigenere Cipher</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Vigenere Cipher / One Time Pad</h1>
+    <div class="boxy">
+        <h3>Input Text</h3>
+        <textarea id="inputText" class="longformtextbox" placeholder="Type here..."></textarea>
+        <label for="keyInput" style="color: white; align-self: center; margin-top: 1em;">Key:</label>
+        <input type="text" id="keyInput" value="" style="align-self: center; width: 100px; text-align: center;">
+        <button id="encryptButton" class="btnbtn">Encrypt</button>
+    </div>
+
+    <div class="boxy">
+        <h3>Encrypted Text</h3>
+        <textarea id="textOutput" class="textOutput"></textarea>
+    </div>
+
+    <div class="boxy">
+        <h3>Frequency Analysis</h3>
+        <div class="analysis-container">
+            <div>
+                <button id="analyzeButton" class="btnbtn">Analyze</button>
+                <div id="analysisOutput" style="color: white; margin-top: 1em; white-space: pre-wrap;"></div>
+            </div>
+            <img src="letterFreq.png" alt="Letter Frequency Chart" class="freq-image">
+        </div>
+    </div>
+
+    <div class="boxy">
+        <a href="rsa.html">Next</a>
+    </div>
+    <script src="vigenere.js"></script>
+</body>
+</html>
+
