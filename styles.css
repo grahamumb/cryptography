@@ -67,3 +67,17 @@ a {
     border: 1px solid white;
     margin-left: 1em;
 }
+
+#crackOutput {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.crack-column {
+    width: 32%;
+    padding: 5px;
+    border: 1px solid #505050;
+    border-radius: 4px;
+    word-wrap: break-word;
+}
